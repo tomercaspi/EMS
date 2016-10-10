@@ -1,0 +1,80 @@
+body {
+    font-family: sans-serif;
+    background-color: #2F2F2F;
+    margin: 100px;
+}
+
+h2 {
+    font-weight: 600;
+    margin: 0;
+}
+
+.sectionCSS {
+    background-color: #f3f3f3;
+    width: 765px;
+    padding: 20px;
+}
+
+.createEmployee {
+    border-radius: 7px;
+}
+
+label {
+    font-weight: 600;
+}
+
+form input, form select {
+    width: 244px;
+    height: 40px;
+    border-radius: 7px;
+    border: 1px solid gray;
+    font-size: 17px;
+    font-weight: 600;
+    padding-left: 4px;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.emloyeeList {
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+li, dt, dd {
+    list-style: none;
+}
+
+.btn {
+    /*position: relative;*/
+    width: 177px;
+    height: 50px;
+    margin-top: 10px;
+    background: #5cb85c;
+    border-radius: 7px;
+    border: 1px solid #5EB753;
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    padding: 0;
+}
+
+/*.btn:after {
+    width: 100%;
+    content: '';
+    display: inline-block;
+    position: absolute;
+    bottom:0;
+    height: 7px;
+    left: 0;
+    border-radius: 5px;
+    border-bottom: 1px solid #35FB35;
+}*/
+
+
+dt:after {
+    content: ": ";
+}
