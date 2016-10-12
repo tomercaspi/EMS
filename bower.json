@@ -1,0 +1,17 @@
+{
+  "name": "EMS",
+  "homepage": "https://github.com/tomercaspi/EMS",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "handlebars": "^4.0.5"
+  }
+}
