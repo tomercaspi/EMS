@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<div class="createEmployee sectionCSS">
+<section class="createEmployee sectionCSS layout-wrap">
     <h1>Employee Management System</h1>
     <form class="employeeForm" action="" method="post">
         <fieldset class="employee-info">
@@ -23,18 +23,18 @@
             <button id="addEmployeeButton" class="btn">Add Employee</button>
         </fieldset>
     </form>
-</div>
-<div class="emloyeeList sectionCSS">
+</section>
+
+<section class="employeeList sectionCSS layout-wrap">
     <h2>Employee List:</h2>
     <ul class="employees">
 
         <li class="employee">
             <div id="container"></div>
             <script id="employee-template" type="text/x-handlebars-template">
-                <!--<hr>-->
                 {{#each entries}}
+                <hr>
                 <ul class="u-clearfix">
-                    <hr>
                     <li><label for="empID">ID: </label>{{id}}</li>
                     <li><label for="empName">Name: </label>{{name}}</li>
                     <li><label for="empSkill">Skill: </label>{{skill}}</li>
@@ -42,7 +42,7 @@
                     <li><label for="empArrival">Last Check-In: </label>{{datetime}}</li>
                     <li>
                         <ul class="Employee-actions">
-                            <li><button class="btn">{{actionName}}</button></li>
+                            <li><button class="btn titleBtn">{{actionName}}</button></li>
                         </ul>
 
                     </li>
@@ -68,7 +68,7 @@
             </script>-->
         </li>
     </ul>
-</div>
+</section>
 <script src="bower_components/handlebars/handlebars.js"></script>
 <script src="emsJS.js"></script>
 </body>

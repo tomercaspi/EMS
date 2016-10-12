@@ -1,26 +1,65 @@
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 body {
     font-family: sans-serif;
     background-color: #2F2F2F;
-    margin: 100px;
+    /*margin: 100px;*/
 }
 
-h2 {
+h2, h1 {
     font-weight: 600;
     margin: 0;
 }
 
 .sectionCSS {
+    /*position: absolute;*/
     background-color: #f3f3f3;
-    width: 765px;
+   /* width: 765px;
     padding: 20px;
+    top: 100px;
+    bottom: 10px;
+    overflow: auto;
+    left: 0;
+    right: 0;*/
 }
 
+.layout-wrap{
+    max-width: 960px;
+    min-width: 585px;
+    margin: 0 auto;
+    padding: 24px;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+}
 .createEmployee {
     border-radius: 7px;
 }
 
+#container ul {
+    display: inline-block;
+    width: 40%;
+}
+
+hr {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
 label {
     font-weight: 600;
+}
+
+.employee-info {
+    margin: 20px 0;
 }
 
 form input, form select {
@@ -30,7 +69,8 @@ form input, form select {
     border: 1px solid gray;
     font-size: 17px;
     font-weight: 600;
-    padding-left: 4px;
+    padding-left: 8px;
+    line-height: 41px;
 }
 
 fieldset {
@@ -39,18 +79,25 @@ fieldset {
     padding: 0;
 }
 
-.emloyeeList {
+.employeeList {
     margin-top: 20px;
+    overflow: auto;
+    max-height: 610px;
     border-radius: 7px;
 }
 
-li, dt, dd {
+/*.employees {
+    margin-left: inherit;
+}*/
+
+ul, li {
     list-style: none;
+    padding: 0;
 }
 
 .btn {
     /*position: relative;*/
-    width: 177px;
+    /*width: 177px;*/
     height: 50px;
     margin-top: 10px;
     background: #5cb85c;
@@ -59,7 +106,12 @@ li, dt, dd {
     font-size: 17px;
     font-weight: 600;
     color: #fff;
-    padding: 0;
+    padding: 0 15px;
+}
+
+.titleBtn {
+    display: inline-block;
+
 }
 
 /*.btn:after {
@@ -75,6 +127,7 @@ li, dt, dd {
 }*/
 
 
+/*
 dt:after {
     content: ": ";
-}
+}*/
