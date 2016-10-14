@@ -17,10 +17,11 @@
                 <option value="Developer" selected>Developer</option>
                 <option value="Teacher">Teacher</option>
                 <option value="Manager">Manager</option>
+                <option value="CEO">CEO</option>
             </select>
         </fieldset>
-        <fieldset class="employee-action">
-            <button id="addEmployeeButton" class="btn">Add Employee</button>
+        <fieldset>
+            <button id="addEmployeeButton" class="btn" type="button">Add Employee</button>
         </fieldset>
     </form>
 </section>
@@ -34,19 +35,32 @@
             <script id="employee-template" type="text/x-handlebars-template">
                 {{#each entries}}
                 <hr>
-                <ul class="u-clearfix">
+                <ul>
                     <li><label for="empID">ID: </label>{{id}}</li>
                     <li><label for="empName">Name: </label>{{name}}</li>
                     <li><label for="empSkill">Skill: </label>{{skill}}</li>
                     <li><label for="empTitle">Title: </label>{{title}}</li>
                     <li><label for="empArrival">Last Check-In: </label>{{datetime}}</li>
-                    <li>
-                        <ul class="Employee-actions">
-                            <li><button class="btn titleBtn">{{actionName}}</button></li>
-                        </ul>
-
-                    </li>
-                  </ul>
+                </ul>
+                <div class="employee-actions">
+                        <div id="employeeButtons">
+                            {{#if Teacher}}
+                            <button class="btn">Check-In</button>
+                            {{/if}}
+                            {{#if Developer}}
+                            <button class="btn">Check-In</button>
+                            {{/if}}
+                            {{#if Manager}}
+                            <button class="btn">Say Yo</button>
+                            <button class="btn">Check-In</button>
+                            {{/if}}
+                            {{#if CEO}}
+                            <button class="btn">Fire Everyone</button>
+                            <button class="btn">Say Yo</button>
+                            <button class="btn">Check-In</button>
+                            {{/if}}
+                        </div>
+                </div>
                 {{/each}}
             </script>
             <!--<script id="employee-template" type="text/x-handlebars-template">
