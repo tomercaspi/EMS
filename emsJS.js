@@ -158,9 +158,7 @@ function getEmployee(e){
         //actionName: element.appendChild(option.getButtons);
     };
 
-    newObj[option] = true;
-
-
+    newObj[option.text] = true;
 
     /* create the employee in the HTML */
     createEmployeesList(newObj);
